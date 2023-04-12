@@ -27,16 +27,28 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-             <SocialLogo to="/" onClick={toggleHome}>
+              <FooterLinkTitle>Platform</FooterLinkTitle>
+              <FooterLink to="/signin">Careers</FooterLink>
+              <FooterLink to="/signin">Support</FooterLink>
+              <FooterLink to="/signin">Blog</FooterLink>
+              <FooterLink to="/signin">Investors</FooterLink>
+            </FooterLinkItems>
+            <FooterLinkItems>
+              <FooterLinkTitle>Solutions</FooterLinkTitle>
+              <FooterLink to="/signin">Instagram</FooterLink>
+              <FooterLink to="/signin">Facebook</FooterLink>
+              <FooterLink to="/signin">Youtube</FooterLink>
+              <FooterLink to="/signin">Twitter</FooterLink>
+            </FooterLinkItems>
+          </FooterLinksWrapper>
+          <FooterLinksWrapper>
+            <FooterLinkItems>
+           <SocialLogo to="/" onClick={toggleHome}>
               Everpay
-             </SocialLogo>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Support</FooterLink>
-              <FooterLink to="/signin">Blog</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
+           </SocialLogo>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle> Social Media</FooterLinkTitle>
+              <FooterLinkTitle>Shop</FooterLinkTitle>
               <FooterLink to="/signin">Instagram</FooterLink>
               <FooterLink to="/signin">Facebook</FooterLink>
               <FooterLink to="/signin">Youtube</FooterLink>
@@ -45,24 +57,7 @@ const Footer = () => {
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle> About us</FooterLinkTitle>
-              <FooterLink to="/signin">Contact us</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Support</FooterLink>
-              <FooterLink to="/signin">Blog</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle> Social Media</FooterLinkTitle>
-              <FooterLink to="/signin">Instagram</FooterLink>
-              <FooterLink to="/signin">Facebook</FooterLink>
-              <FooterLink to="/signin">Youtube</FooterLink>
-              <FooterLink to="/signin">Twitter</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle> Videos</FooterLinkTitle>
+              <FooterLinkTitle>Company</FooterLinkTitle>
               <FooterLink to="/signin">Submit Video</FooterLink>
               <FooterLink to="/signin">Ambassador</FooterLink>
               <FooterLink to="/signin">Agency</FooterLink>
@@ -70,7 +65,7 @@ const Footer = () => {
               <FooterLink to="/signin">Trailer</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle> Contact Us</FooterLinkTitle>
+              <FooterLinkTitle> Resources</FooterLinkTitle>
               <FooterLink to="/signin">Contact</FooterLink>
               <FooterLink to="/signin">Support</FooterLink>
               <FooterLink to="/signin">Destinations</FooterLink>
@@ -119,6 +114,7 @@ const Footer = () => {
               <FaYoutube />
             </SocialIconLink>
           </SocialIcons>
+          <WebsiteLegal>Terms | Privacy Policy | Legal Policy | GDPR | Status</WebsiteLegal>
         </SocialMediaWrap>
       </SocialMedia>
     </FooterContainer>

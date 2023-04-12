@@ -69,7 +69,7 @@ export const FooterLink = styled(Link)`
 `;
 
 export const SocialMedia = styled.section`
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
 `;
 export const SocialMediaWrap = styled.div`
@@ -96,6 +96,12 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const WebsiteRights = styled.small`
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 16px;
+`;
+
+export const WebsiteLegal = styled.small`
   color: #fff;
   font-size: 12px;
   margin-bottom: 16px;

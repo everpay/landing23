@@ -11,6 +11,7 @@ import {
   NavLinks,
   NavItem,
   NavBtnLink,
+  NavBtnStart,
   NavBtn,
 } from "./NavbarElements";
 
@@ -108,17 +109,9 @@ const Navbar = ({ toggle }) => {
             </NavMenu>
             <NavBtn>
               <NavBtnLink to="/signin">Log In</NavBtnLink>
-            </NavBtn>
-            <NavItem>
-                <NavLinks
-                  to="/signup"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
-                  exact="true"
-                >
-                  Get Started ->
+            </NavBtnStart>
+            <NavBtnLink to="/signin">Get Started-></NavBtnLink>
+            </NavBtnStart>   
                 </NavLinks>
               </NavItem>
           </NavbarContainer>
