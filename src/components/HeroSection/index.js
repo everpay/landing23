@@ -10,7 +10,7 @@ import {
   HeroP,
   VideoBg,
 } from "./HeroElements.js";
-import Video from "../../videos/everpay-intro";
+import Video from "../../videos/everpay-intro.mp4";
 import { Button } from "../ButtonElements";
 
 const HeroSection = () => {
