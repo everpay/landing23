@@ -54,7 +54,7 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                   exact="true"
                 >
-                  About
+                  Platform
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                   exact="true"
                 >
-                  Discover
+                  Solutions
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -78,7 +78,19 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                   exact="true"
                 >
-                  Services
+                  Shop
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="services"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                  exact="true"
+                >
+                  Company
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -90,13 +102,25 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                   exact="true"
                 >
-                  Sign Up
+                  Resources
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/signin">Log In</NavBtnLink>
             </NavBtn>
+            <NavItem>
+                <NavLinks
+                  to="/signup"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                  exact="true"
+                >
+                  Get Started ->
+                </NavLinks>
+              </NavItem>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
