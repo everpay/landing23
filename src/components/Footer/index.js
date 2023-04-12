@@ -27,6 +27,24 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
+             <SocialLogo to="/" onClick={toggleHome}>
+              Everpay
+             </SocialLogo>
+              <FooterLink to="/signin">Careers</FooterLink>
+              <FooterLink to="/signin">Support</FooterLink>
+              <FooterLink to="/signin">Blog</FooterLink>
+              <FooterLink to="/signin">Investors</FooterLink>
+            </FooterLinkItems>
+            <FooterLinkItems>
+              <FooterLinkTitle> Social Media</FooterLinkTitle>
+              <FooterLink to="/signin">Instagram</FooterLink>
+              <FooterLink to="/signin">Facebook</FooterLink>
+              <FooterLink to="/signin">Youtube</FooterLink>
+              <FooterLink to="/signin">Twitter</FooterLink>
+            </FooterLinkItems>
+          </FooterLinksWrapper>
+          <FooterLinksWrapper>
+            <FooterLinkItems>
               <FooterLinkTitle> About us</FooterLinkTitle>
               <FooterLink to="/signin">Contact us</FooterLink>
               <FooterLink to="/signin">Careers</FooterLink>
@@ -63,10 +81,7 @@ const Footer = () => {
       </FooterWrap>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to="/" onClick={toggleHome}>
-            bankkr
-          </SocialLogo>
-          <WebsiteRights>Everpay Inc. © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+          <WebsiteRights>Everpay Corporation © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
           <SocialIcons>
             <SocialIconLink
               href="https://facebook.com/everpay"

@@ -13,7 +13,7 @@ export const FooterWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 export const FooterLinksContainer = styled.div`
@@ -50,7 +50,9 @@ export const FooterLinkItems = styled.div`
 `;
 
 export const FooterLinkTitle = styled.h1`
-  font-size: 14px;
+  color: #fcfcfc;
+  font-size: 16px;
+  font-weight: bold;
   margin-bottom: 16px;
 `;
 
@@ -87,7 +89,7 @@ export const SocialLogo = styled(Link)`
   display: flex;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
@@ -95,6 +97,7 @@ export const SocialLogo = styled(Link)`
 
 export const WebsiteRights = styled.small`
   color: #fff;
+  font-size: 12px;
   margin-bottom: 16px;
 `;
 
