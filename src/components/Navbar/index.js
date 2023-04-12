@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              bankkr
+              Everpay
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="signup"
+                  to="/signup"
                   smooth={true}
                   duration={500}
                   spy={true}
