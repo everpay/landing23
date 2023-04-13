@@ -15,7 +15,6 @@ import {
   NavItem,
   NavBtnLink,
   NavBtn,
-  NavBtnStart,
 } from "./NavbarElements";
 
   const NavBtnStart = () => {
