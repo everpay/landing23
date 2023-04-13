@@ -17,13 +17,6 @@ import {
   NavBtn,
 } from "./NavbarElements";
 
-const button= () => {
-  const [hover, setHover] = useState(false);
-
-  const handleHover = () => {
-    setHover(!hover);
-  };
-
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
