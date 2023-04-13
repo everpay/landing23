@@ -72,8 +72,8 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkS)`
-  color: #fdfdfd;
+export const NavLinks = styled(LinkR)`
+  color: #01bf71;
   display: flex;
   padding: 0 1rem;
   font-weight: 600;
@@ -86,7 +86,7 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #01bf71;
   }
 `;
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkS)`
   color: #fdfdfd;
   display: flex;
   padding: 0 1rem;
