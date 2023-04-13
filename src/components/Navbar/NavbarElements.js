@@ -30,14 +30,14 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fcfcfc;
+  color: #ffffff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.75rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: none;
 `;
 
@@ -75,29 +75,13 @@ export const NavItem = styled.li`
 export const NavLinks = styled(LinkS)`
   color: #fdfdfd;
   display: flex;
-    padding-left: 0.85em;
-    padding-right: 0.85em;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    position: relative;
-    text-transform: uppercase;
-    font-weight: 500;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  padding: 0 1rem;
+  font-weight: 500;
+  align-items: center;
   text-decoration: none;
+  height: 100%;
+  cursor: pointer;
   
-element.style {
-    font-size: 1.5rem;
-    text-decoration: none;
-    list-style: none;
-    text-transform: uppercase;
-    height: 100%;
-    cursor: pointer;
-
   &.active {
     border-bottom: 3px solid #01bf71;
   }
@@ -108,7 +92,7 @@ export const NavBtnStart = styled.nav`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    display: flex;
   }
 `;
 
@@ -116,17 +100,16 @@ export const NavBtnStartLink = styled(LinkR)`
   border-radius: 50px;
   background-color: #2dbe60;
   border-color: #2dbe60;
-  padding: 0.65rem 2rem;
-  text-transform: uppercase;
+  padding: 10px 22px;
   color: #fff;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   outline: none;
   border: none;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s  ease-in-out;
   text-decoration: none;
 
   &:hover {
@@ -148,11 +131,10 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: transparent;
   color: #010606;
-  padding: 0.65rem 2rem;
-  text-transform: uppercase;
+  padding: 10px 22px;
   white-space: nowrap;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
   outline: none;
   border: none;
   cursor: pointer;
