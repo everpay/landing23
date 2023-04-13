@@ -50,7 +50,7 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     cursor: pointer;
     color: #fff;
   }
@@ -73,11 +73,22 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #fdfdfd;
   display: flex;
-  align-items: center;
+    padding-left: 0.85em;
+    padding-right: 0.85em;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   text-decoration: none;
-  font-weight: bold;
   
 element.style {
     font-size: 1.5rem;
