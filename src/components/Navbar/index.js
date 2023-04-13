@@ -18,8 +18,14 @@ import {
   NavBtnStart,
 } from "./NavbarElements";
 
+  const NavBtnStart = () => {
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
+
   const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav, hover, setHover] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -37,11 +43,8 @@ import {
     scroll.scrollToTop();
   };
 
-  const handleHover = () => {
-    setHover(!hover);
-  };
-
   return (
+
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
