@@ -37,6 +37,13 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
+const NavBtnStart = () => {
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
+  };
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
