@@ -17,14 +17,8 @@ import {
 } from "./NavbarElements";
 import { Button } from "../ButtonElements";
 
-const NavBtnStart = () => {
-  const [hover, setHover] = useState(false);
-
-  const handleHover = () => {
-    setHover(!hover);
-
   const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollNav, setScrollNav, hover, setHover] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -33,6 +27,9 @@ const NavBtnStart = () => {
       setScrollNav(false);
     }
   };
+
+  const handleHover = () => {
+    setHover(!hover);
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
