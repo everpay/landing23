@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
@@ -34,7 +34,9 @@ const Navbar = ({ toggle }) => {
 
   const toggleHome = () => {
     scroll.scrollToTop();
-
+  };
+  
+ const NavBtnStart = () => {
   const [hover, setHover] = useState(false);
 
   const handleHover = () => {
@@ -117,6 +119,7 @@ const Navbar = ({ toggle }) => {
             <NavBtn>
               <NavBtnLink to="/signin">Log In</NavBtnLink>
             </NavBtn>
+           <NavBtnStart>
             <button>
             to="signup"
             onMouseEnter={handleHover}
@@ -131,6 +134,7 @@ const Navbar = ({ toggle }) => {
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
             </button>  
+          </NavBtnStart>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

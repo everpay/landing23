@@ -132,6 +132,15 @@ export const NavBtnLink = styled(LinkR)`
   }
 `;
 
+export const NavBtnStart = styled.nav`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
