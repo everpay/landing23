@@ -17,13 +17,6 @@ import {
   NavBtn,
 } from "./NavbarElements";
 
-  const NavBtnStart = () => {
-  const [hover, setHover] = useState(false);
-
-  const handleHover = () => {
-    setHover(!hover);
- };
-
   const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -41,6 +34,12 @@ import {
 
   const toggleHome = () => {
     scroll.scrollToTop();
+
+  const NavBtnStart = () => {
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
   };
 
   return (
