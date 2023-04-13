@@ -129,8 +129,7 @@ import { Button } from "../ButtonElements";
             spy={true}
             offset={-80}
             exact="true"
-          >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+          >Get Started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>  
           </NavBtnStart>
           </NavbarContainer>
