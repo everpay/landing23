@@ -18,7 +18,7 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav, button] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -32,10 +32,13 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", changeNav);
   }, []);
 
-   const toggleHome = () => {
+  const toggleHome = () => {
     scroll.scrollToTop();
 
-   const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
   };
 
   return (
