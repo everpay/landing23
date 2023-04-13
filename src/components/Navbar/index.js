@@ -21,9 +21,8 @@ import { Button } from "../ButtonElements";
 
   const handleHover = () => {
     setHover(!hover);
-  };
 
-const Navbar = ({ toggle }) => {
+  const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
