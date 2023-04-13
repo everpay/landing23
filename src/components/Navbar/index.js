@@ -3,27 +3,21 @@ import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
-  ArrowForward,
-  ArrowRight,
   Nav,
   NavbarContainer,
   NavLogo,
+  EverpayLogo,
   MobileIcon,
   NavMenu,
   NavLinks,
   NavItem,
   NavBtnLink,
   NavBtn,
-  NavBtnStart,
+  NavBtnStartLink,
 } from "./NavbarElements";
-import { Button } from "../ButtonElements";
 
   const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav, hover, setHover] = useState(false);
-
-  const handleHover = () => {
-    setHover(!hover);
-  };
+  const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -33,7 +27,7 @@ import { Button } from "../ButtonElements";
     }
   };
 
-  useEffect(() => {
+   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
 
@@ -48,7 +42,7 @@ import { Button } from "../ButtonElements";
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              Everpay
+             <EverpayLogo> Everpay </EverpayLogo>
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -116,23 +110,9 @@ import { Button } from "../ButtonElements";
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Log In</NavBtnLink>
-            </NavBtn>
-           <NavBtnStart>
-            <Button>
-            to="signup"
-            onMouseEnter={handleHover}
-            onMouseLeave={handleHover}
-            dark="true"
-            primary="true"
-            smooth={true}
-            duration={500}
-            spy={true}
-            offset={-80}
-            exact="true"
-          >Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-            </Button>  
-          </NavBtnStart>
+              <NavBtnLink to="/signin">Sign in</NavBtnLink>
+              <NavBtnStartLink to="/signup">Get started</NavBtnStartLink>  
+          </NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

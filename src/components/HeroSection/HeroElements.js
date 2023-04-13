@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-  background: #FFFFFF;
+  background: #2b2b2b;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 20px;
   height: 800px;
   position: relative;
   z-index: 1;
@@ -47,36 +47,41 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
-  padding: 8px 24px;
+  padding: 8px 20px 8px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const HeroH1 = styled.h1`
-  color: #ccc;
-  font-size: 48px;
+  margin-top: -10px;
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
   align-items: center;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 56px;
+    margin-top: -20px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    margin-top: -20px;
+    font-size: 42px;
   }
 `;
 
 export const HeroP = styled.p`
-  margin-top: 24px;
-  color: #fefefe;
+  margin-top: 10px;
+  color: #fff;
   font-size: 24px;
   text-align: center;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
+    margin-top: -10px;
   }
 
   @media screen and (max-width: 480px) {
@@ -85,10 +90,15 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const Button = styled.div`
+    padding: 18px 30px !important;
+    color: #fff !important;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

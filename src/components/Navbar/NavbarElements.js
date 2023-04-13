@@ -4,9 +4,9 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#2b2b2b" : "transparent")};
   height: 80px;
-  margin-top: -90px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +27,11 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1200px;
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #ffffff;
+  color: #fff; 
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.85rem;
@@ -42,18 +42,27 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
 `;
 
+export const EverpayLogo = styled(LinkR)`
+  background: url("../images/logo.png") no-repeat scroll center bottom;
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+`;
+
 export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
+    color: #fff; 
     display: block;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 10px;
     transform: translate(-100%, 60%);
     font-size: 1.25rem;
-    cursor: pointer;
-    color: ${({ scrollNav }) => (scrollNav ? "#ffffff" : "#4c4d4d")};  
+    cursor: pointer; 
+    color: ${({ lightText }) => (lightText ? "#f7f7fa" : "#fff")};
   }
 `;
 
@@ -74,7 +83,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: ${({ scrollNav }) => (scrollNav ? "#ffffff" : "#4c4d4d")};  
+  color: #fff;  
   display: flex;
   padding: 0 1rem;
   font-weight: 600;
@@ -82,22 +91,13 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   height: 100%;
   cursor: pointer;
+  color: ${({ lightText }) => (lightText ? "#4c4d4d" : "#fff")};
   
   &.active {
     border-bottom: 3px solid #01bf71;
   }
 `;
 
-export const Button = styled(LinkR)`
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 600;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
 
 export const NavBtn = styled.nav`
   display: flex;
@@ -108,27 +108,26 @@ export const NavBtn = styled.nav`
   }
 `;
 export const NavBtnLink = styled(LinkR)`
+  color: ${({ scrollNav }) => (scrollNav ? "#fcfcfc" : "#fff")};
   border-radius: 50px;
   background: transparent;
-  color: #010606;
-  padding: 0 1rem;
+  padding: 12px 22px;
+  margin-right: 10px;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   outline: none;
-  border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-decoration: none;
 
   &:hover {
     transition: all 0.5s ease-in-out;
-    background: transparent;
-    color: #01bf71;
+    color: #2dbe60;
   }  
 
   &.active {
-    color: #01bf71;
+    color: #26a151;
   }
 `;
 
@@ -144,9 +143,42 @@ export const NavBtnStart = styled.nav`
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
+  font-weight: 600;
+  color: #2dbe60;
+  cursor: pointer;
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 8px;
+  margin-left: 6px;
   font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+`;
+
+export const NavBtnStartLink = styled(LinkR)`
+  color: #ddd;
+  border-radius: 50px;
+  border-color: rgba(0,0,0,.08);
+  border-width: 1px !important;
+  background-color: transparent;
+  padding: 12px 22px;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.5s ease-in-out;
+      background-color: #6f42c1c7;
+      border-color: #6f42c1c7 !important;
+      border-width: 2px;
+      color: #fff;
+  }  
+
+  &.active {
+    color: #fff;
+  }
 `;
