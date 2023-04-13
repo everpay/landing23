@@ -40,7 +40,6 @@ import { Button } from "../ButtonElements";
   const handleHover = () => {
     setHover(!hover);
   };
-
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
