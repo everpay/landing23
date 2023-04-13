@@ -118,7 +118,7 @@ export const NavBtnStartLink = styled(LinkR)`
   color: #fff;
   white-space: nowrap;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   outline: none;
   border: none;
   cursor: pointer;
@@ -145,7 +145,7 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: transparent;
   color: #010606;
-  padding: 10px 22px;
+  padding: 0 1rem;
   white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
