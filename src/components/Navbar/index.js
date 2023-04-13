@@ -37,7 +37,7 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
-const NavBtnStart = () => {
+const button= () => {
   const [hover, setHover] = useState(false);
 
   const handleHover = () => {
@@ -120,7 +120,7 @@ const NavBtnStart = () => {
             <NavBtn>
               <NavBtnLink to="/signin">Log In</NavBtnLink>
             </NavBtn>
-            <NavBtnStart>
+            <button>
             to="signup"
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
@@ -133,7 +133,7 @@ const NavBtnStart = () => {
             exact="true"
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-            </NavBtnStart>  
+            <button>  
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
