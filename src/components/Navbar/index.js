@@ -112,9 +112,7 @@ const Navbar = ({ toggle }) => {
             </NavBtn>
             <NavBtnStart>
             <NavBtnStartLink to="/signup">Get Started-></NavBtnLink>
-            </NavBtnStart>   
-                </NavLinks>
-              </NavItem>
+            </NavBtnStart>  
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
