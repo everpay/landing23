@@ -88,35 +88,14 @@ export const NavLinks = styled(LinkR)`
   }
 `;
 
-export const NavBtnStart = styled.nav`
+export const Button = styled(LinkR)`
   display: flex;
   align-items: center;
+  font-size: 16px;
+  font-weight: 600;
 
   @media screen and (max-width: 768px) {
     display: none;
-  }
-`;
-
-export const NavBtnStartLink = styled(LinkR)`
-  border-radius: 50px;
-  background-color: #2dbe60;
-  border-color: #2dbe60;
-  padding: 10px 22px;
-  color: #ffffff;
-  white-space: nowrap;
-  font-size: 16px;
-  font-weight: 600;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s  ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease;
-    background: #01bf71;
-    color: #fdfdfd;
   }
 `;
 

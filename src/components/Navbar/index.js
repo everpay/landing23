@@ -13,8 +13,6 @@ import {
   NavLinks,
   NavItem,
   NavBtnLink,
-  NavBtnStart,
-  NavBtnStartLink,
   NavBtn,
 } from "./NavbarElements";
 import { Button } from "../ButtonElements";
