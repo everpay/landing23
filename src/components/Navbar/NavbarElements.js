@@ -33,7 +33,7 @@ export const NavLogo = styled(LinkR)`
   color: #ffffff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -47,12 +47,12 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     transform: translate(-100%, 60%);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     cursor: pointer;
-    color: #fff;
+    color: ${({ scrollNav }) => (scrollNav ? "#ffffff" : "#4c4d4d")};  
   }
 `;
 
@@ -73,21 +73,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkR)`
-  color: #01bf71;
-  display: flex;
-  padding: 0 1rem;
-  font-weight: 600;
-  align-items: center;
-  text-decoration: none;
-  height: 100%;
-  cursor: pointer;
-  
-  &.active {
-    border-bottom: 3px solid #01bf71;
-  }
-`;
-export const NavLinks = styled(LinkS)`
-  color: #fdfdfd;
+  color: ${({ scrollNav }) => (scrollNav ? "#ffffff" : "#4c4d4d")};  
   display: flex;
   padding: 0 1rem;
   font-weight: 600;
@@ -106,7 +92,7 @@ export const NavBtnStart = styled.nav`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    display: flex;
+    display: none;
   }
 `;
 
@@ -115,7 +101,7 @@ export const NavBtnStartLink = styled(LinkR)`
   background-color: #2dbe60;
   border-color: #2dbe60;
   padding: 10px 22px;
-  color: #fff;
+  color: #ffffff;
   white-space: nowrap;
   font-size: 16px;
   font-weight: 600;
@@ -164,4 +150,14 @@ export const NavBtnLink = styled(LinkR)`
   &.active {
     color: #01bf71;
   }
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+  margin-left: 8px;
+  font-size: 20px;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  margin-left: 8px;
+  font-size: 20px;
 `;

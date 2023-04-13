@@ -3,6 +3,8 @@ import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
+  ArrowForward,
+  ArrowRight,
   Nav,
   NavbarContainer,
   NavLogo,
@@ -112,7 +114,18 @@ const Navbar = ({ toggle }) => {
               <NavBtnLink to="/signin">Log In</NavBtnLink>
             </NavBtn>
             <NavBtnStart>
-            <NavBtnStartLink to="/signup">Get Started-></NavBtnStartLink>
+            to="signup"
+            onMouseEnter={handleHover}
+            onMouseLeave={handleHover}
+            dark="true"
+            primary="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-80}
+            exact="true"
+          >
+            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
             </NavBtnStart>  
           </NavbarContainer>
         </Nav>
