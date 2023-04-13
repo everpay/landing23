@@ -17,6 +17,7 @@ import {
   NavBtnStartLink,
   NavBtn,
 } from "./NavbarElements";
+import { Button } from "../ButtonElements";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
