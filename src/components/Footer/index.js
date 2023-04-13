@@ -14,6 +14,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights,
+  WebsiteLegal,
 } from "./FooterElements";
 import { animateScroll as scroll } from "react-scroll";
 

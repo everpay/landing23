@@ -33,11 +33,11 @@ export const NavLogo = styled(LinkR)`
   color: #fcfcfc;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
 `;
 
@@ -80,13 +80,12 @@ export const NavLinks = styled(LinkS)`
   font-weight: bold;
   
 element.style {
-    font-size: 14px;
-    padding: 0.65rem 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
     text-transform: uppercase;
     height: 100%;
-    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+    cursor: pointer;
 
   &.active {
     border-bottom: 3px solid #01bf71;
