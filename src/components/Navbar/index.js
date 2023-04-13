@@ -21,10 +21,6 @@ import { Button } from "../ButtonElements";
   const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav, hover, setHover] = useState(false);
 
-  const handleHover = () => {
-    setHover(!hover);
-  };
-
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);
@@ -39,6 +35,10 @@ import { Button } from "../ButtonElements";
 
   const toggleHome = () => {
     scroll.scrollToTop();
+  };
+
+  const handleHover = () => {
+    setHover(!hover);
   };
 
   return (
