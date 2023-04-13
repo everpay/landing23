@@ -34,9 +34,8 @@ const Navbar = ({ toggle }) => {
 
   const toggleHome = () => {
     scroll.scrollToTop();
-  };
-  
- const NavBtnStart = () => {
+ 
+  const NavBtnStart = () => {
   const [hover, setHover] = useState(false);
 
   const handleHover = () => {
