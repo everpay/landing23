@@ -34,12 +34,10 @@ const Navbar = ({ toggle }) => {
 
    const toggleHome = () => {
     scroll.scrollToTop();
+  };
 
    const button= () => {
    const [hover, setHover] = useState(false);
-
-   const handleHover = () => {
-    setHover(!hover);
   };
 
   return (
