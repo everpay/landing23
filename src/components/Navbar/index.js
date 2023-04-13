@@ -22,7 +22,6 @@ const NavBtnStart = () => {
 
   const handleHover = () => {
     setHover(!hover);
-  };
 
   const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
