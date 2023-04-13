@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import { Button } from "../ButtonElements";
 import {
   ArrowForward,
   ArrowRight,
@@ -16,7 +17,6 @@ import {
   NavBtn,
   NavBtnStart,
 } from "./NavbarElements";
-import { Button } from "../ButtonElements";
 
   const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav, hover, setHover] = useState(false);
@@ -40,6 +40,7 @@ import { Button } from "../ButtonElements";
   const handleHover = () => {
     setHover(!hover);
   };
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
