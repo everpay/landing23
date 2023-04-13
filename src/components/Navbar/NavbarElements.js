@@ -78,8 +78,14 @@ export const NavLinks = styled(LinkS)`
   align-items: center;
   text-decoration: none;
   font-weight: bold;
-  padding: 0 1rem;
-  height: 100%;
+  
+element.style {
+    font-size: 14px;
+    padding: 0.65rem 2rem;
+    text-transform: uppercase;
+    height: 100%;
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 
   &.active {
@@ -96,6 +102,30 @@ export const NavBtnStart = styled.nav`
   }
 `;
 
+export const NavBtnStartLink = styled(LinkR)`
+  border-radius: 50px;
+  background-color: #2dbe60;
+  border-color: #2dbe60;
+  padding: 0.65rem 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #01bf71;
+    color: #fdfdfd;
+  }
+`;
+
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
@@ -106,9 +136,10 @@ export const NavBtn = styled.nav`
 `;
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #fff;
-  padding: 10px 22px;
-  color: #01bf71;
+  background: transparent;
+  color: #010606;
+  padding: 0.65rem 2rem;
+  text-transform: uppercase;
   white-space: nowrap;
   font-size: 14px;
   font-weight: bold;
@@ -120,7 +151,7 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: transparent;
+    color: #01bf71;
   }
 `;
