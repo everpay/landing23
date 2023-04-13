@@ -12,6 +12,7 @@ import {
   NavItem,
   NavBtnLink,
   NavBtnStart,
+  NavBtnStartLink,
   NavBtn,
 } from "./NavbarElements";
 
