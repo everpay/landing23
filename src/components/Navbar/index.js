@@ -32,17 +32,15 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", changeNav);
   }, []);
 
-  const toggleHome = () => {
+   const toggleHome = () => {
     scroll.scrollToTop();
-  };
 
-const button= () => {
-  const [hover, setHover] = useState(false);
+   const button= () => {
+   const [hover, setHover] = useState(false);
 
-  const handleHover = () => {
+   const handleHover = () => {
     setHover(!hover);
   };
-
 
   return (
     <>
