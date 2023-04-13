@@ -76,7 +76,21 @@ export const NavLinks = styled(LinkS)`
   color: #fdfdfd;
   display: flex;
   padding: 0 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+  
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+`;
+export const NavLinks = styled(LinkR)`
+  color: #fdfdfd;
+  display: flex;
+  padding: 0 1rem;
+  font-weight: 600;
   align-items: center;
   text-decoration: none;
   height: 100%;
@@ -113,7 +127,7 @@ export const NavBtnStartLink = styled(LinkR)`
   text-decoration: none;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease;
     background: #01bf71;
     color: #fdfdfd;
   }
@@ -134,7 +148,7 @@ export const NavBtnLink = styled(LinkR)`
   padding: 10px 22px;
   white-space: nowrap;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   outline: none;
   border: none;
   cursor: pointer;
@@ -142,8 +156,12 @@ export const NavBtnLink = styled(LinkR)`
   text-decoration: none;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background: transparent;
+    color: #01bf71;
+  }  
+
+  &.active {
     color: #01bf71;
   }
 `;
