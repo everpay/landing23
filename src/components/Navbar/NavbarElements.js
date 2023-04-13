@@ -73,7 +73,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkS)`
   color: ${({ scrollNav }) => (scrollNav ? "#ffffff" : "#4c4d4d")};  
   display: flex;
   padding: 0 1rem;

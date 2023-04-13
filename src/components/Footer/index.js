@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter, FaGithub, FaYoutube } from "react-icons/fa";
 import {
   FooterContainer,
   FooterLink,

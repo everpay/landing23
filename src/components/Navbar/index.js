@@ -118,7 +118,7 @@ import { Button } from "../ButtonElements";
               <NavBtnLink to="/signin">Log In</NavBtnLink>
             </NavBtn>
            <NavBtnStart>
-            <button>
+            <Button>
             to="signup"
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
@@ -131,7 +131,7 @@ import { Button } from "../ButtonElements";
             exact="true"
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-            </button>  
+            </Button>  
           </NavBtnStart>
           </NavbarContainer>
         </Nav>
