@@ -23,6 +23,7 @@ import { Button } from "../ButtonElements";
 
   const handleHover = () => {
     setHover(!hover);
+  };
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
