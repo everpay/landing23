@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "../ButtonElements";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
@@ -15,13 +14,19 @@ import {
   NavItem,
   NavBtnLink,
   NavBtn,
+  NavBtnStart,
 } from "./NavbarElements";
+import { Button } from "../ButtonElements";
 
-  const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav, hover, setHover] = useState(false);
+const NavBtnStart = () => {
+  const [hover, setHover] = useState(false);
 
   const handleHover = () => {
     setHover(!hover);
+  };
+
+  const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
