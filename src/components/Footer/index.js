@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaGithub, FaYoutube } from "react-icons/fa";
 import {
   FooterContainer,
   FooterLink,
@@ -28,6 +28,11 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
+           <SocialLogo to="/" onClick={toggleHome}>
+              Everpay
+           </SocialLogo>
+            </FooterLinkItems>
+            <FooterLinkItems>
               <FooterLinkTitle>Platform</FooterLinkTitle>
               <FooterLink to="/signin">Careers</FooterLink>
               <FooterLink to="/signin">Support</FooterLink>
@@ -44,26 +49,18 @@ const Footer = () => {
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-           <SocialLogo to="/" onClick={toggleHome}>
-              Everpay
-           </SocialLogo>
-            </FooterLinkItems>
-            <FooterLinkItems>
               <FooterLinkTitle>Shop</FooterLinkTitle>
-              <FooterLink to="/signin">Instagram</FooterLink>
-              <FooterLink to="/signin">Facebook</FooterLink>
-              <FooterLink to="/signin">Youtube</FooterLink>
-              <FooterLink to="/signin">Twitter</FooterLink>
+              <FooterLink to="/signin">Submit Video</FooterLink>
+              <FooterLink to="/signin">Ambassador</FooterLink>
+              <FooterLink to="/signin">Agency</FooterLink>
+              <FooterLink to="/signin">Influencer</FooterLink>
             </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Company</FooterLinkTitle>
               <FooterLink to="/signin">Submit Video</FooterLink>
               <FooterLink to="/signin">Ambassador</FooterLink>
               <FooterLink to="/signin">Agency</FooterLink>
               <FooterLink to="/signin">Influencer</FooterLink>
-              <FooterLink to="/signin">Trailer</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle> Resources</FooterLinkTitle>
@@ -101,11 +98,11 @@ const Footer = () => {
               <FaTwitter />
             </SocialIconLink>
             <SocialIconLink
-              href="https://www.instagram.com/everpay/"
+              href="https://www.github.com/everpay/"
               target="_blank"
-              area-label="Instagram"
+              area-label="Github"
             >
-              <FaInstagram />
+              <FaGithub />
             </SocialIconLink>
             <SocialIconLink
               href="https://www.youtube.com/channel/UC8dz0ZtyNQoqNFyZklGEy6w"
