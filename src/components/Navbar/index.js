@@ -132,7 +132,7 @@ const button= () => {
             exact="true"
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-            <button>  
+            </button>  
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
