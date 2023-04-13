@@ -14,7 +14,6 @@ import {
   NavItem,
   NavBtnLink,
   NavBtn,
-  NavBtnStart,
 } from "./NavbarElements";
 import { Button } from "../ButtonElements";
 
