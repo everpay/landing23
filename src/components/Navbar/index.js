@@ -6,7 +6,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
-  EverpayLogo,
+  Logo,
   MobileIcon,
   NavMenu,
   NavLinks,
@@ -41,8 +41,8 @@ import {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
-             <EverpayLogo> Everpay </EverpayLogo>
+            <NavLogo to="/" onClick={toggleHome}><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={42} height={42}  alt='Everpay' /></Logo>
+             Everpay
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -50,7 +50,7 @@ import {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="about"
+                  to="/platform"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -62,7 +62,7 @@ import {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="discover"
+                  to="/solutions"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -74,7 +74,19 @@ import {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="services"
+                  to="/developers"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                  exact="true"
+                >
+                  Developers
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="/shop"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -86,32 +98,20 @@ import {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="services"
+                  to="/about"
                   smooth={true}
                   duration={500}
                   spy={true}
                   offset={-80}
                   exact="true"
                 >
-                  Company
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="/signup"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-80}
-                  exact="true"
-                >
-                  Resources
+                  About
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Sign in</NavBtnLink>
-              <NavBtnStartLink to="/signup">Get started</NavBtnStartLink>  
+              <NavBtnLink to="/login">Log in</NavBtnLink>
+              <NavBtnStartLink to="/signup">Open Account</NavBtnStartLink>  
           </NavBtn>
           </NavbarContainer>
         </Nav>

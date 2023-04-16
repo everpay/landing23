@@ -13,6 +13,9 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   top: 0;
+  opacity: 0.9;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
   z-index: 10;
 
   @media screen and (max-width: 960px) {
@@ -37,17 +40,13 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.85rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 700;
 `;
 
-export const EverpayLogo = styled(LinkR)`
-  background: url("../images/logo.png") no-repeat scroll center bottom;
-  justify-self: flex-start;
-  display: flex;
-  align-items: center;
-  margin-left: 0px;
+export const Logo = styled.div`
+  margin-right: 5px;
+  margin-top: 6px;
 `;
 
 export const MobileIcon = styled.div`
@@ -86,7 +85,7 @@ export const NavLinks = styled(LinkS)`
   color: #fff;  
   display: flex;
   padding: 0 1rem;
-  font-weight: 600;
+  font-weight: 500;
   align-items: center;
   text-decoration: none;
   height: 100%;
@@ -110,12 +109,12 @@ export const NavBtn = styled.nav`
 export const NavBtnLink = styled(LinkR)`
   color: ${({ scrollNav }) => (scrollNav ? "#fcfcfc" : "#fff")};
   border-radius: 50px;
-  background: transparent;
+  background: #2dbe60;
   padding: 12px 22px;
   margin-right: 10px;
   white-space: nowrap;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   outline: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -123,7 +122,9 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.5s ease-in-out;
-    color: #2dbe60;
+    background: #26a151;
+    opacity: 0.8;
+    color: #fcfcfc;
   }  
 
   &.active {
@@ -136,7 +137,8 @@ export const NavBtnStart = styled.nav`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -151,12 +153,12 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 6px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
 `;
 
 export const NavBtnStartLink = styled(LinkR)`
-  color: #ddd;
+  color: #fcfcfc;
   border-radius: 50px;
   border-color: rgba(0,0,0,.08);
   border-width: 1px !important;
@@ -164,7 +166,7 @@ export const NavBtnStartLink = styled(LinkR)`
   padding: 12px 22px;
   white-space: nowrap;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;

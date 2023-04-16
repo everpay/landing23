@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 
 import Home from "./pages";
+import PlatformPage from "./pages/platform";
 import SigninPage from "./pages/signin";
 import SignupPage from "./pages/signup";
 
@@ -11,7 +12,9 @@ function App() {
     <>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/signin" component={SigninPage} exact />
+
+        <Route path="/platform" component={PlatformPage} exact />
+        <Route path="/login" component={SigninPage} exact />
         <Route path="/signup" component={SignupPage} exact />
       </Switch>
       <Footer />

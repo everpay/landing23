@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import {
   Container,
-  Logo,
   Icon,
   Form,
   FormButton,
@@ -13,17 +12,17 @@ import {
   FormLabel,
   FormWrap,
   Text,
-} from "./SigninElements";
+} from "./PlatformElements";
 
-const SignIn = () => {
+const Platform = () => {
   return (
     <Container>
       <FormWrap>
-        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={48} height={48} /></Logo>
-            </Icon>
+        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={42} height={42} /></Logo>
+             Everpay</Icon>
         <FormContent>
           <Form action="#">
-            <FormH1>Log in</FormH1>
+            <FormH1>Sign in to your account</FormH1>
             <FormLabel htmlFor="for">Email</FormLabel>
             <FormInput type="email" required />
             <FormLabel htmlFor="for">Password</FormLabel>
@@ -32,7 +31,7 @@ const SignIn = () => {
             <Text>
               New user?{" "}
               <Link to="/signup" style={{ color: "#01bf71" }}>
-                Register Here
+                Apply now
               </Link>
             </Text>
           </Form>
@@ -46,11 +45,11 @@ export const SignUp = () => {
   return (
     <Container>
       <FormWrap>
-        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={48} height={48} /></Logo>
-            </Icon>
+        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={42} height={42} /></Logo>
+             Everpay</Icon>
         <FormContent>
           <Form action="#">
-            <FormH1>Create Account</FormH1>
+            <FormH1>Create A New Account</FormH1>
             <FormLabel htmlFor="for">Name</FormLabel>
             <FormInput type="name" required />
             <FormLabel htmlFor="for">Email</FormLabel>
@@ -71,4 +70,4 @@ export const SignUp = () => {
   );
 };
 
-export default SignIn;
+export default Platform;

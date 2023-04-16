@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #101522;
+  background-color: #27124a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,6 +56,13 @@ export const FooterLinkTitle = styled.h1`
   margin-bottom: 16px;
 `;
 
+export const FooterLinkContact = styled.div`
+  color: #fcfcfc;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 14px;
+`;
+
 export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
@@ -68,6 +75,32 @@ export const FooterLink = styled(Link)`
   }
 `;
 
+export const FooterAddress = styled(Link)`
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1.25rem;
+  margin-bottom: 0rem;
+  font-size: 18px;
+  font-weight: 600;
+
+  &:hover {
+    color: #fff;
+    transition: 0.1s ease-out;
+  }
+`;
+
+export const FooterDivider = styled.div` 
+    height: 1px;
+    color: #fefefe;
+    margin-top: 2px;
+    margin-bottom: 20px;
+`;
+
+export const FooterDividerLine = styled.small` 
+    height: 1px;
+    color: #fefefe;
+`;
+
 export const SocialMedia = styled.section`
   max-width: 1200px;
   width: 100%;
@@ -77,7 +110,7 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -97,14 +130,14 @@ export const SocialLogo = styled(Link)`
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  font-size: 12px;
-  margin-bottom: 16px;
+  font-size: 13px;
+  margin-bottom: 24px;
 `;
 
 export const WebsiteLegal = styled.small`
   color: #fff;
-  font-size: 12px;
-  margin-bottom: 16px;
+  font-size: 13px;
+  margin-bottom: 24px;
 `;
 
 export const SocialIcons = styled.div`
@@ -112,14 +145,36 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 `;
 
 export const SocialIconLink = styled.a`
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
 
   &:hover {
     color: #01bf71;
   }
+`;
+
+export const FooterMediaWrap = styled.section`
+  max-width: 1100px;
+  width: 100%;
+`; 
+
+export const FooterTermItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 40px auto 20px auto;
+`;
+
+export const FooterTermLine = styled.small`
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 14px;
+  max-width: 1200px;
 `;

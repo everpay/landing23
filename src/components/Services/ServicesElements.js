@@ -1,11 +1,11 @@
 import styled from "styled-components";
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: rgb(43, 43, 43);
 
   @media screen and (max-width: 768px) {
     height: 1300px;
@@ -13,12 +13,12 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 16px;
+  grid-gap: 20px;
   padding: 0 50px;
 
   @media screen and (max-width: 1000px) {
@@ -28,6 +28,16 @@ export const ServicesWrapper = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+`;
+
+export const ServicesBreak = styled.div`
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+    height: 1px;
+    color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
 `;
 
 export const ServicesCard = styled.div`
@@ -50,24 +60,44 @@ export const ServicesCard = styled.div`
 `;
 
 export const ServicesIcon = styled.img`
-  height: 160px;
-  width: 160px;
+  height: 164px;
+  width: 164px;
   margin-bottom: 10px;
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
+  margin-bottom: 14px;
+    font-size: 48px;
+    font-weight: 600;
   color: #fff;
-  margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 38px;
   }
 `;
 
 export const ServicesH2 = styled.h2`
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 1px;
+`;
+
+export const ServicesTopLineH2 = styled.h2`
+    color: rgb(1, 191, 113);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+`;
+
+export const ServicesTopLineP = styled.p`
+    max-width: 920px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 24px
+  text-align: center;
+  color: #fff;
 `;
 
 export const ServicesP = styled.p`
