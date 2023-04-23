@@ -74,7 +74,7 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle> Company</FooterLinkTitle>
-              <FooterLink to="/whyus">Why us</FooterLink>
+              <FooterLink to="/whyus">Why Us</FooterLink>
               <FooterLink to="/about">About</FooterLink>
               <FooterLink to="/contact">Contact</FooterLink>
               <FooterLink to="/blog">Blog</FooterLink>
@@ -84,7 +84,7 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle> Talk to us</FooterLinkTitle>
               <FooterLinkContact> +1 (800) 566-6003</FooterLinkContact>
-              <FooterLink to="/contact">Contact sales</FooterLink>
+              <FooterLink to="/contact">Contact Sales</FooterLink>
               <FooterLink to="/bookdemo">Book A Demo</FooterLink>
               <FooterAddress>The Platform for Global Payments </FooterAddress>
            </FooterLinkItems>

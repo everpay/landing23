@@ -105,7 +105,7 @@ import {
                   offset={-80}
                   exact="true"
                 >
-                  About
+                  Company
                 </NavLinks>
               </NavItem>
             </NavMenu>
