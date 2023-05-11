@@ -45,17 +45,17 @@ const Services = () => {
        <ServicesBreak></ServicesBreak>   
        <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
+          <ServicesIcon src={Icon4} />
           <ServicesH2>All In One Place</ServicesH2>
           <ServicesP>Scale faster, No need for apps, separate accounts or software.</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
+          <ServicesIcon src={Icon5} />
           <ServicesH2>Global Payouts</ServicesH2>
           <ServicesP>Save time and costs with our real-time crypto payouts solution.</ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
+          <ServicesIcon src={Icon6} />
           <ServicesH2>Data Security</ServicesH2>
           <ServicesP>Protect your processing, business and keep sensitive data secure.</ServicesP>
         </ServicesCard>
