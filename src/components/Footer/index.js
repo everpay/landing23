@@ -22,7 +22,6 @@ import {
   FooterTermItems,
   FooterTermLine,
 } from "./FooterElements";
-import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
   
