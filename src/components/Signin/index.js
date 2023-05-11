@@ -19,7 +19,7 @@ const SignIn = () => {
   return (
     <Container>
       <FormWrap>
-        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={48} height={48} /></Logo>
+        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={48} height={48} alt='Everpay' /></Logo>
             </Icon>
         <FormContent>
           <Form action="#">
@@ -46,7 +46,7 @@ export const SignUp = () => {
   return (
     <Container>
       <FormWrap>
-        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={48} height={48} /></Logo>
+        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={48} height={48} alt='Everpay' /></Logo>
             </Icon>
         <FormContent>
           <Form action="#">
