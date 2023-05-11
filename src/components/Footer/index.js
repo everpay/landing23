@@ -14,7 +14,6 @@ import {
   FooterDividerLine,
   SocialIconLink,
   SocialIcons,
-  SocialLogo,
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights,
