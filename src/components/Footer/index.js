@@ -95,7 +95,7 @@ const Footer = () => {
 </FooterDivider>
       <SocialMedia>
         <SocialMediaWrap>
-          <WebsiteRights>© Everpay Corporation {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+          <WebsiteRights>© Everpay Corporation 2009 - {new Date().getFullYear()} All rights reserved, All brand names and logos are the property of their respective owners, are used for identification purposes only, and do not imply product endorsement or affiliation with Everpayinc.com </WebsiteRights>
           <SocialIcons>
             <SocialIconLink
               href="https://facebook.com/everpay"
