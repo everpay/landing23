@@ -33,7 +33,7 @@ const CtaSection = () => {
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
             light="true"
-            secondary="true"
+            primary="true"
             smooth={true}
             duration={500}
             spy={true}
@@ -41,20 +41,6 @@ const CtaSection = () => {
             exact="false"
           >
             Contact Sales {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-          <Button
-            to="signup"
-            onMouseEnter={handleHover}
-            onMouseLeave={handleHover}
-            dark="false"
-            primary="true"
-            smooth={true}
-            duration={500}
-            spy={true}
-            offset={-80}
-            exact="true"
-          >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

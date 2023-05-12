@@ -4,7 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#2b2b2b" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#ffffff" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -14,7 +14,6 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   opacity: 0.9;
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
   border-color: transparent;
   z-index: 10;
 
@@ -34,7 +33,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff; 
+  color: #2b2b2b; 
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.85rem;
@@ -53,7 +52,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    color: #fff; 
+    color: #2b2b2b; 
     display: block;
     position: absolute;
     top: 15px;
@@ -61,7 +60,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.25rem;
     cursor: pointer; 
-    color: ${({ lightText }) => (lightText ? "#f7f7fa" : "#fff")};
+    color: ${({ lightText }) => (lightText ? "#f7f7fa" : "#2b2b2b")};
   }
 `;
 
@@ -82,7 +81,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;  
+  color: #2b2b2b;  
   display: flex;
   padding: 0 1rem;
   font-weight: 500;
@@ -90,7 +89,7 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   height: 100%;
   cursor: pointer;
-  color: ${({ lightText }) => (lightText ? "#4c4d4d" : "#fff")};
+  color: ${({ lightText }) => (lightText ? "#4c4d4d" : "#2b2b2b")};
   
   &.active {
     border-bottom: 3px solid #01bf71;
@@ -123,7 +122,7 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.5s ease-in-out;
     background: #26a151;
-    opacity: 0.8;
+    opacity: 0.9;
     color: #fcfcfc;
   }  
 
@@ -143,22 +142,40 @@ export const NavBtnStart = styled.nav`
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
-  margin-left: 8px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #2dbe60;
+  margin-left: 2px;
+  font-size: 0.8rem;
   cursor: pointer;
+  color: #2b2b2b;
+
+  &:hover {
+    transition: all 0.5s ease-in-out;
+      color: #fff;
+  }  
+
+  &.active {
+    color: #fff;
+  }
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
-  margin-left: 6px;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
+  margin-left: 2px;
+    top: 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: #2b2b2b;
+
+  &:hover {
+    transition: all 0.5s ease-in-out;
+      color: #fff;
+  }  
+
+  &.active {
+    color: #fff;
+  }
 `;
 
 export const NavBtnStartLink = styled(LinkR)`
-  color: #fcfcfc;
+  color: #2b2b2b;
   border-radius: 50px;
   border-color: rgba(0,0,0,.08);
   border-width: 1px !important;
@@ -174,8 +191,8 @@ export const NavBtnStartLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.5s ease-in-out;
-      background-color: #6f42c1c7;
-      border-color: #6f42c1c7 !important;
+      background-color: #2f2e41;
+      border-color: #2f2e41 !important;
       border-width: 2px;
       color: #fff;
   }  
@@ -184,3 +201,4 @@ export const NavBtnStartLink = styled(LinkR)`
     color: #fff;
   }
 `;
+

@@ -80,19 +80,7 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle> Talk to us</FooterLinkTitle>
               <FooterLinkContact> +1 (800) 566-6003</FooterLinkContact>
-              <FooterLink to="/contact">Contact Sales</FooterLink>
-              <FooterLink to="/bookdemo">Book A Demo</FooterLink>
-              <FooterAddress>The Platform for Global Payments </FooterAddress>
-           </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
-      </FooterWrap>
- <FooterDivider> <FooterDividerLine></FooterDividerLine>
-</FooterDivider>
-      <SocialMedia>
-        <SocialMediaWrap>
-          <WebsiteRights>© Everpay Corporation 2009 - {new Date().getFullYear()} All rights reserved, All brand names and logos are the property of their respective owners, are used for identification purposes only, and do not imply product endorsement or affiliation with Everpayinc.com </WebsiteRights>
-          <SocialIcons>
+               <SocialIcons>
             <SocialIconLink
               href="https://facebook.com/everpay"
               target="_blank"
@@ -121,14 +109,19 @@ const Footer = () => {
             >
               <FaGithub />
             </SocialIconLink>
-            <SocialIconLink
-              href="https://www.youtube.com/channel/UC8dz0ZtyNQoqNFyZklGEy6w"
-              target="_blank"
-              area-label="Youtube"
-            >
-              <FaYoutube />
-            </SocialIconLink>
           </SocialIcons>
+              <FooterAddress>The Platform for Global Payments </FooterAddress>
+           </FooterLinkItems>
+          </FooterLinksWrapper>
+        </FooterLinksContainer>
+      </FooterWrap>
+ <FooterDivider> 
+<FooterDividerLine>
+</FooterDividerLine>
+</FooterDivider>
+      <SocialMedia>
+        <SocialMediaWrap>
+          <WebsiteRights>© Everpay Corporation 2009 - {new Date().getFullYear()} All rights reserved.</WebsiteRights>
           <WebsiteLegal> Terms | Privacy | Cookies | GDPR | Security </WebsiteLegal>
         </SocialMediaWrap>
       </SocialMedia>
@@ -136,7 +129,8 @@ const Footer = () => {
         <FooterMediaWrap>
            <FooterTermItems>
               <FooterTermLine> *Everpay is a financial technology company, not a bank. Remittance and funds transfer services provided by EntreBiz Group Pte Ltd.</FooterTermLine>
-              <FooterTermLine> Crypto payment services provided by Triple-A Technology Pte ltd and digital asset management services provided by D.A.M.S. Everpay does not exchange hold, buy or sell cryptocurrency.</FooterTermLine>
+              <FooterTermLine> All brand names and logos are the property of their respective owners.  </FooterTermLine>
+              <FooterTermLine> Crypto payment services provided by Triple-A Technology Pte ltd and digital asset management services provided by Damex.io, Everpay does not exchange hold, buy or sell cryptocurrency.</FooterTermLine>
               <FooterTermLine> The Everpay Debit Cards are issued by Edebit Group and Railsr, pursuant to licenses from MasterCard. The Biga Card is issued by Licensed electronic money instituions, Member FDIC, pursuant to a license from MasterCard.</FooterTermLine>
               <FooterTermLine> Everpay and its featured customers are financial technology companies and not banks. Account deposit services are provided by Everpay’s banking as a service providers, selected electronic money institutions and partner banks who are Member FDIC.</FooterTermLine>
               </FooterTermItems>

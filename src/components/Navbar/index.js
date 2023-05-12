@@ -13,6 +13,8 @@ import {
   NavItem,
   NavBtnLink,
   NavBtn,
+  ArrowForward,
+  ArrowRight,
   NavBtnStartLink,
 } from "./NavbarElements";
 
@@ -35,14 +37,18 @@ import {
     scroll.scrollToTop();
   };
 
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
+  };
   return (
 
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={42} height={42}  alt='Everpay' /></Logo>
-             Everpay
+            <NavLogo to="/" onClick={toggleHome}><Logo><img src='../Logo.png' width={136} height={34}  alt='Everpay' /></Logo>
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -111,7 +117,21 @@ import {
             </NavMenu>
             <NavBtn>
               <NavBtnLink to="/login">Log in</NavBtnLink>
-              <NavBtnStartLink to="/signup">Open Account</NavBtnStartLink>  
+ <NavBtnStartLink
+            to="signup"
+            onMouseEnter={handleHover}
+            onMouseLeave={handleHover}
+            dark="false"
+            primary="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-80}
+            exact="true"
+          >
+            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+          </NavBtnStartLink>
+            
           </NavBtn>
           </NavbarContainer>
         </Nav>

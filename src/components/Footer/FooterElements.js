@@ -137,20 +137,23 @@ export const WebsiteRights = styled.small`
   color: #fff;
   font-size: 13px;
   margin-bottom: 24px;
+  max-width: 50%;
 `;
 
 export const WebsiteLegal = styled.small`
   color: #fff;
   font-size: 13px;
   margin-bottom: 24px;
+  max-width: 50%;
 `;
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
-  margin-bottom: 22px;
+  width: 160px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 `;
 
 export const SocialIconLink = styled.a`
