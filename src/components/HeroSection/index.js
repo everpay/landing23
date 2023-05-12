@@ -26,9 +26,9 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Making Global Payments Simple</HeroH1>
+        <HeroH1>Grow Your Business With Our Solutions</HeroH1>
         <HeroP>
-         Start growing your business with our innovative payment solutions.
+        Automate your collections, manage payments at scale and access funds in real-time.
         </HeroP>
         <HeroBtnWrapper>
           <Button

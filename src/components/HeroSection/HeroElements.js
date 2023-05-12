@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-  background: #2b2b2b;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +18,8 @@ export const HeroContainer = styled.div`
     right: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    background: linear-gradient(190deg, #ffffff 0%, rgba(0, 0, 0, 0.2) 100%),
+      linear-gradient(190deg, #FFFFFF 0%, rgba(0, 0, 0, 0.2) 100%);
     z-index: 2;
   }
 `;
@@ -55,7 +55,7 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   margin-top: -10px;
-  color: #fff;
+  color: rgb(47, 46, 65);
   font-size: 76px;
   font-weight: 700;
   align-items: center;
@@ -74,7 +74,8 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
   margin-top: 2px;
-  color: #fff;
+  color: rgb(0 0 0);
+  text-shadow: 0 1 black;
   font-size: 24px;
   text-align: center;
   max-width: 600px;

@@ -29,7 +29,7 @@ const CtaSection = () => {
         </HeroP> 
         <HeroBtnWrapper>
           <Button
-            to="contact"
+            to="/signup"
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
             light="true"
