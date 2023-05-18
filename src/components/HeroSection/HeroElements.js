@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  height: 800px;
+  height: 720px;
   position: relative;
   z-index: 1;
 
@@ -47,14 +47,14 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1000px;
   position: absolute;
-  padding: 8px 40px 8px 30px;
+  padding: 50px 40px 8px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const HeroH1 = styled.h1`
-  margin-top: -10px;
+  margin-top: 20px;
   color: rgb(47, 46, 65);
   font-size: 76px;
   font-weight: 700;
@@ -63,17 +63,17 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 56px;
-    margin-top: -20px;
+    margin-top: 20px;
   }
 
   @media screen and (max-width: 480px) {
-    margin-top: -20px;
+    margin-top: 20px;
     font-size: 42px;
   }
 `;
 
 export const HeroP = styled.p`
-  margin-top: 2px;
+  margin-top: -10px;
   color: rgb(0 0 0);
   text-shadow: 0 1 black;
   font-size: 24px;
@@ -98,7 +98,7 @@ export const HeroBtnWrapper = styled.div`
 `;
 
 export const Btn = styled.div`
-    padding: 18px 30px !important;
+    padding: 22px 36px !important;
     color: #fff !important;
 `;
 

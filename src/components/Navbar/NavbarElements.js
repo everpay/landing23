@@ -145,7 +145,7 @@ export const ArrowForward = styled(MdArrowForward)`
   margin-left: 2px;
   font-size: 0.8rem;
   cursor: pointer;
-  color: #2b2b2b;
+  color: "#2b2b2b";
 
   &:hover {
     transition: all 0.5s ease-in-out;
@@ -162,7 +162,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     top: 2px;
     font-size: 0.8rem;
     cursor: pointer;
-    color: #2b2b2b;
+    color: "#2b2b2b";
 
   &:hover {
     transition: all 0.5s ease-in-out;

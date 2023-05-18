@@ -28,7 +28,7 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Grow Your Business With Our Solutions</HeroH1>
         <HeroP>
-        Automate your collections, manage payments at scale and access funds in real-time.
+        Automate your collections, manage all payment methods at scale and access funds in real-time.
         </HeroP>
         <HeroBtnWrapper>
           <Button

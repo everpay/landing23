@@ -12,17 +12,18 @@ import {
   FormLabel,
   FormWrap,
   Text,
-} from "./PrivacyPolicyElements";
+} from "./ContactUsElements";
 
-const PrivacyPolicy = () => {
+const Contact = () => {
   return (
     <Container>
       <FormWrap>
-        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={42} height={42} alt='Everpay'/></Logo>
-             Everpay</Icon>
+        <Icon to="/">
+Contact us
+            </Icon>
         <FormContent>
           <Form action="#">
-            <FormH1>Privacy policy</FormH1>
+            <FormH1>Contact Us</FormH1>
             <FormLabel htmlFor="for">Email</FormLabel>
             <FormInput type="email" required />
             <FormLabel htmlFor="for">Password</FormLabel>
@@ -30,8 +31,8 @@ const PrivacyPolicy = () => {
             <FormButton type="submit">Continue</FormButton>
             <Text>
               New user?{" "}
-              <Link to="/signup" style={{ color: "#01bf71" }}>
-                Apply now
+              <Link to="/contact.php" style={{ color: "#01bf71" }}>
+                Send Message
               </Link>
             </Text>
           </Form>
@@ -41,16 +42,6 @@ const PrivacyPolicy = () => {
   );
 };
 
-export const SignUp = () => {
-  return (
-    <Container>
-      <FormWrap>
-        <Icon to="/"><Logo><img src='https://res.cloudinary.com/lmj6rf6tz/image/upload/v1681518139/img/LogoSqr.png' width={42} height={42} alt='Everpay'/></Logo>
-             Everpay</Icon>
-       
-      </FormWrap>
-    </Container>
-  );
-};
 
-export default PrivacyPolicy;
+
+export default Contact;

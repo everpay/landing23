@@ -56,7 +56,7 @@ const Services = () => {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon6} />
-          <ServicesH2>Data Security</ServicesH2>
+          <ServicesH2>Bank Grade Security</ServicesH2>
           <ServicesP>Protect your processing, business and keep sensitive data secure.</ServicesP>
         </ServicesCard>
       </ServicesWrapper>

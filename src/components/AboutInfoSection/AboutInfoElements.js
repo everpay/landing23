@@ -5,16 +5,16 @@ export const InfoContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? "#FEFEFE" : "#FFFFFF")};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 720px;
+  height: 540px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 24px;
@@ -45,27 +45,18 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 580px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 `;
 
-export const TopLine = styled.div`
-  color: #01bf71;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-`;
 export const Heading = styled.h1`
   color: "rgb(47, 46, 65)";
   margin-bottom: 24px;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 1.1.%;
   font-weight: 700;
-  color: ${({ lightText }) => (lightText ? " rgb(47, 46, 65)" : "#010606")};
+  color: ${({ lightText }) => (lightText ? " rgb(47, 46, 65)" : "#4c4d4d")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -73,11 +64,11 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
+  max-width: 520px;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "rgb(1, 6, 6)")};
+  color: ${({ darkText }) => (darkText ? "#4c4d4d" : "#4c4d4d")};
 `;
 
 export const BtnWrap = styled.div`
@@ -86,7 +77,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 480px;
   height: 100%;
 `;
 
