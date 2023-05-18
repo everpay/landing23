@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
@@ -9,7 +10,6 @@ import {
   Logo,
   MobileIcon,
   NavMenu,
-  NavLinks,
   NavItem,
   NavBtnLink,
   NavBtn,
@@ -55,7 +55,7 @@ import {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks
+                <Link
                   to="/platform"
                   smooth={true}
                   duration={500}
@@ -64,10 +64,10 @@ import {
                   exact="true"
                 >
                   Platform
-                </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
+                <Link
                   to="/solutions"
                   smooth={true}
                   duration={500}
@@ -76,10 +76,10 @@ import {
                   exact="true"
                 >
                   Solutions
-                </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
+                <Link
                   to="/developers"
                   smooth={true}
                   duration={500}
@@ -88,22 +88,22 @@ import {
                   exact="true"
                 >
                   Developers
-                </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
+                <Link 
                   to="/shop"
                   smooth={true}
                   duration={500}
                   spy={true}
                   offset={-80}
                   exact="true"
-                >
+                  >
                   Shop
-                </NavLinks>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLinks
+                <Link
                   to="/about"
                   smooth={true}
                   duration={500}
@@ -112,13 +112,13 @@ import {
                   exact="true"
                 >
                   Company
-                </NavLinks>
+                </Link>
               </NavItem>
             </NavMenu>
             <NavBtn>
               <NavBtnLink to="/login">Log in</NavBtnLink>
- <NavBtnStartLink
-            to="signup"
+            <NavBtnStartLink
+            to="/signup"
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
             dark="false"

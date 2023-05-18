@@ -52,7 +52,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    color: #2b2b2b; 
+    color: #4c4d4d; 
     display: block;
     position: absolute;
     top: 15px;
@@ -60,7 +60,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.25rem;
     cursor: pointer; 
-    color: ${({ lightText }) => (lightText ? "#f7f7fa" : "#2b2b2b")};
+    color: ${({ lightText }) => (lightText ? "#f7f7fa" : "#4c4d4d")};
   }
 `;
 
@@ -78,10 +78,22 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  color: #2b2b2b; 
+  display: flex;
+  padding: 0 1rem;
+  font-weight: 500;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+  color: ${({ lightText }) => (lightText ? "#4c4d4d" : "#2b2b2b")};
+  
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
 `;
 
-export const NavLinks = styled(LinkS)`
-  color: #2b2b2b;  
+export const Link = styled(LinkS)`
   display: flex;
   padding: 0 1rem;
   font-weight: 500;
