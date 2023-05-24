@@ -60,7 +60,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.25rem;
     cursor: pointer; 
-    color: ${({ lightText }) => (lightText ? "#f7f7fa" : "#4c4d4d")};
+    color: ${({ lightText }) => (lightText ? "#4c4d4d" : "#4c4d4d")};
   }
 `;
 
@@ -78,7 +78,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
-  color: #2b2b2b; 
+  color: #4c4d4d; 
   display: flex;
   padding: 0 1rem;
   font-weight: 500;
@@ -101,7 +101,7 @@ export const Link = styled(LinkS)`
   text-decoration: none;
   height: 100%;
   cursor: pointer;
-  color: ${({ lightText }) => (lightText ? "#4c4d4d" : "#2b2b2b")};
+  color: ${({ lightText }) => (lightText ? "#4c4d4d" : "#4c4d4d")};
   
   &.active {
     border-bottom: 3px solid #01bf71;
