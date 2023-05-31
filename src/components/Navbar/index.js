@@ -50,9 +50,11 @@ import {
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}><Logo><img src='../Logo.png' width={136} height={34}  alt='Everpay' /></Logo>
             </NavLogo>
-            <MobileIcon onClick={toggle}>
-              <FaBars />
-            </MobileIcon>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav" onClick={toggle}> <span></span> <span></span> <span></span> </button>
+          {/*    <MobileIcon onClick={toggle}>
+             <FaBars />           
+            </MobileIcon>*/}    
             <NavMenu>
               <NavItem>
                 <Link
@@ -112,6 +114,18 @@ import {
                   exact="true"
                 >
                   Company
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link
+                  to="/contact"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-80}
+                  exact="true"
+                >
+                  Contact
                 </Link>
               </NavItem>
             </NavMenu>

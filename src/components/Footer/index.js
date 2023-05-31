@@ -89,7 +89,7 @@ const Footer = () => {
               <FaFacebook />
             </SocialIconLink>
             <SocialIconLink
-              href="https://www.linkedin.com/in/everpay/"
+                  href="https://www.linkedin.com/in/everpay/"
               target="_blank"
               area-label="Linkedin"
             >

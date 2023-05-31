@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.div`margin-top: 150px;
   background: #ffffff;
   display: flex;
   justify-content: center;

@@ -73,7 +73,9 @@ export const ServicesH1 = styled.h1`
   margin-bottom: 14px;
     font-size: 48px;
     font-weight: 600;
-  color: #fff;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
 
   @media screen and (max-width: 480px) {
     font-size: 38px;
@@ -102,6 +104,8 @@ export const ServicesTopLineP = styled.p`
     line-height: 24px
   text-align: center;
   color: #fff;
+  padding: 10px;
+  text-align: justify;
 `;
 
 export const ServicesP = styled.p`

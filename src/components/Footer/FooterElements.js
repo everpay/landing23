@@ -26,7 +26,7 @@ export const FooterLinksContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 820px) {
-    padding-top: 32px;
+    ${'' /* padding-top: 32px; */}
   }
 `;
 export const FooterLinksWrapper = styled.div`
@@ -168,6 +168,8 @@ export const SocialIconLink = styled.a`
 export const FooterMediaWrap = styled.section`
   max-width: 1100px;
   width: 100%;
+  text-align:justify;
+  padding: 5px;
 `; 
 
 export const FooterTermItems = styled.div`
