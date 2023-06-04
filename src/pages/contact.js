@@ -14,8 +14,6 @@ const [isOpen, setIsOpen] = useState(false);
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <ContactHeroSection />
-      {/* <Contact />  */}
-      {/* <HeroContainer> */}
             <div class="container" style={{ 'margin-top': "20px" }} >
             <div class="row g-4">
               <div class="col-md-4">
@@ -69,10 +67,9 @@ const [isOpen, setIsOpen] = useState(false);
                 <div class="container text-center">
                   <h2 class="text-9 text-white">Awesome Customer Support</h2>
                   <p class="text-4 text-white mb-4">Have you any query? Don't worry. We have great people ready to help you whenever you need it.</p>
-                  <a href="#" class="btn btn-light">Find out more</a> </div>
+                  <a href="/" class="btn btn-light">Find out more</a> </div>
               </div>
             </section>
-      {/* </HeroContainer> */}
             
     </>
   );
