@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import ContactHeroSection from "../components/ContactHeroSection/index";
-import Contact from "../components/Contact";
+import Contact from "../components/Contact/index";
 
 const ContactUsPage = () => {
 const [isOpen, setIsOpen] = useState(false);
