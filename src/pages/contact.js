@@ -54,9 +54,9 @@ const [isOpen, setIsOpen] = useState(false);
               <p class="lead">Get in touch with us on below social media</p>
               <div class="d-flex flex-column">
                 <ul class="social-icons social-icons-lg social-icons-colored justify-content-center">
-                  <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="https://facebook.com/everpay" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://twitter.com/everpay" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                  <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/everpay/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="https://facebook.com/everpay" target="_blank" title="Facebook" rel="noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://twitter.com/everpay" target="_blank" rel="noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/everpay/" target="_blank" rel="noreferrer" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -64,7 +64,7 @@ const [isOpen, setIsOpen] = useState(false);
             <section class="hero-wrap section shadow-md">
               <div class="hero-mask opacity-9 bg-primary"></div>
               <div class="hero-bg" 
-                style={{backgroundImage: `url("assets/images/bg/image-2" rel="noreferrer")`}} ></div>
+                style={{backgroundImage: `url("assets/images/bg/image-2")`}} ></div>
               <div class="hero-content">
                 <div class="container text-center">
                   <h2 class="text-9 text-white">Awesome Customer Support</h2>
