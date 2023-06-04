@@ -64,7 +64,7 @@ const [isOpen, setIsOpen] = useState(false);
             <section class="hero-wrap section shadow-md">
               <div class="hero-mask opacity-9 bg-primary"></div>
               <div class="hero-bg" 
-                style={{backgroundImage: `url("assets/images/bg/image-2.jpg")`}} ></div>
+                style={{backgroundImage: `url("assets/images/bg/image-2" rel="noreferrer")`}} ></div>
               <div class="hero-content">
                 <div class="container text-center">
                   <h2 class="text-9 text-white">Awesome Customer Support</h2>
