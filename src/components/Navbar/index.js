@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -8,7 +7,6 @@ import {
   NavbarContainer,
   NavLogo,
   Logo,
-  MobileIcon,
   NavMenu,
   NavItem,
   NavBtnLink,
