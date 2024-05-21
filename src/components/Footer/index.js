@@ -121,18 +121,16 @@ const Footer = () => {
 </FooterDivider>
       <SocialMedia>
         <SocialMediaWrap>
-          <WebsiteRights>© Everpay Corporation 2009 - {new Date().getFullYear()} All rights reserved.</WebsiteRights>
-          <WebsiteLegal> Terms | Privacy | Cookies | GDPR | Security </WebsiteLegal>
+          <WebsiteRights>© Everpay Corporation 2009 - {new Date().getFullYear()} - All rights reserved.</WebsiteRights>
+          <WebsiteLegal> Terms | Privacy | Cookies | AML Policy | Security </WebsiteLegal>
         </SocialMediaWrap>
       </SocialMedia>
 
         <FooterMediaWrap>
            <FooterTermItems>
-              <FooterTermLine> *Everpay is a financial technology company, not a bank. Remittance and funds transfer services provided by EntreBiz Group Pte Ltd.</FooterTermLine>
-              <FooterTermLine> All brand names and logos are the property of their respective owners.  </FooterTermLine>
-              <FooterTermLine> Crypto payment services provided by Triple-A Technology Pte ltd and digital asset management services provided by Damex.io, Everpay does not exchange hold, buy or sell cryptocurrency.</FooterTermLine>
-              <FooterTermLine> The Everpay Debit Cards are issued by Edebit Group and Railsr, pursuant to licenses from MasterCard. The Biga Card is issued by Licensed electronic money instituions, Member FDIC, pursuant to a license from MasterCard.</FooterTermLine>
               <FooterTermLine> Everpay and its featured customers are financial technology companies and not banks. Account deposit services are provided by Everpay’s banking as a service providers, selected electronic money institutions and partner banks who are Member FDIC.</FooterTermLine>
+              <FooterTermLine> All brand names and logos are the property of their respective owners.  </FooterTermLine>
+              <FooterTermLine> The Everpay Debit Cards are issued by Edebit Group and Railsr, pursuant to licenses from MasterCard. The Biga Card is issued by Licensed electronic money instituions, Member FDIC, pursuant to a license from MasterCard.</FooterTermLine>
               </FooterTermItems>
         </FooterMediaWrap>
 
