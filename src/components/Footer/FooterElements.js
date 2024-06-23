@@ -80,6 +80,24 @@ export const FooterLink = styled(Link)`
   }
 `;
 
+export const CopyrightLink = styled(Link)`
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 5px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 12px;
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.3s ease-out;
+  }
+`;
+
 export const FooterAddress = styled(Link)`
   color: #fff;
   text-decoration: none;
