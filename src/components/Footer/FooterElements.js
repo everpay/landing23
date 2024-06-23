@@ -83,9 +83,11 @@ export const FooterLink = styled(Link)`
 export const CopyrightLink = styled(Link)`
   color: #fff;
   display: flex;
+  align-items: flex-start
   flex-direction: column;
-  align-items: flex-start;
   margin-right: 5px;
+  padding-right: 8px;
+  padding-left: 2px;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
