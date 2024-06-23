@@ -121,7 +121,7 @@ const Footer = () => {
 </FooterDivider>
       <SocialMedia>
         <SocialMediaWrap>
-          <WebsiteRights>Copyright © Everpay 2009 - {new Date().getFullYear()} - All rights reserved.</WebsiteRights>
+          <WebsiteRights>Copyright © 2009 - {new Date().getFullYear()} Everpay.  All rights reserved.</WebsiteRights>
           <WebsiteLegal> Terms | Privacy | Cookies | AML Policy | Security </WebsiteLegal>
         </SocialMediaWrap>
       </SocialMedia>
