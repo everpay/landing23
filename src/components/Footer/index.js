@@ -53,7 +53,7 @@ const Footer = () => {
               <FooterLink to="/get-started">Get Started</FooterLink>
               <FooterLink to="/apidocs">API Docs</FooterLink>
               <FooterLink to="//sandbox.everpayinc.com">Sandbox</FooterLink>
-              <FooterLink to="//production.everpayinc.com">Production</FooterLink>
+              <FooterLink to="//api.everpayinc.com">Production</FooterLink>
               <FooterLink to="/integrations">Integrations</FooterLink>
               <FooterLink to="//status.everpayinc.com">Status Page</FooterLink>
             </FooterLinkItems>
