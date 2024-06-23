@@ -18,6 +18,7 @@ import {
   SocialMediaWrap,
   WebsiteRights,
   WebsiteLegal,
+  CopyrightLink,
   FooterMediaWrap,
   FooterTermItems,
   FooterTermLine,
@@ -122,7 +123,7 @@ const Footer = () => {
       <SocialMedia>
         <SocialMediaWrap>
           <WebsiteRights>Copyright © 2009 - {new Date().getFullYear()} Everpay.  All rights reserved.</WebsiteRights>
-          <WebsiteLegal> Terms | Privacy | Cookies | AML Policy | Security </WebsiteLegal>
+          <WebsiteLegal> <CopyrightLink to="/terms">Terms</CopyrightLink> | <CopyrightLink to="/privacy-policy">Privacy</CopyrightLink> | <CopyrightLink to="/cookie-policy">Cookies</CopyrightLink> | <FooterLink to="/aml-policy">AML Policy</CopyrightLink> | <CopyrightLink to="/security">Security</CopyrightLink> </WebsiteLegal>
         </SocialMediaWrap>
       </SocialMedia>
 
